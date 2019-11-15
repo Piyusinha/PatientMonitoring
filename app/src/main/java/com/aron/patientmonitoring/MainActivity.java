@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private final int NOTIFICATION_ID=001;
     private final String CHANNEL_NAME="PATIENT MONITORING";
     private final String CHANNEL_DESC="ALERT";
+LottieAnimationView  lottieAnimationView;
 Button btn;
 TextView humidity;
 DatabaseReference mRootref= FirebaseDatabase.getInstance().getReference();
@@ -36,6 +38,7 @@ DatabaseReference mHumidityref=mRootref.child("Humidity");
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        lottieAnimationView =(LottieAnimationView)findViewById(R.id.loadinghumidity);
         if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.O)
         {
             NotificationChannel channel=new NotificationChannel(CHANNEL_ID,CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT);
@@ -46,14 +49,7 @@ DatabaseReference mHumidityref=mRootref.child("Humidity");
 
 
         humidity=(TextView)findViewById(R.id.humidity);
-        btn =(Button)findViewById(R.id.check);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                displayNotification(400);
 
-            }
-        });
 
 
     }
@@ -83,6 +79,8 @@ DatabaseReference mHumidityref=mRootref.child("Humidity");
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Float text=dataSnapshot.getValue(Float.class);
+                lottieAnimationView.setVisibility(View.GONE);
+                humidity.setVisibility(View.VISIBLE);
                 humidity.setText(String.valueOf(text));
 
                 if(text>300)
