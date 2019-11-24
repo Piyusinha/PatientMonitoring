@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "228245992939",
+    "firebase_url": "https://patientmonitoring-b75bf.firebaseio.com",
+    "project_id": "patientmonitoring-b75bf",
+    "storage_bucket": "patientmonitoring-b75bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228245992939:android:aeae60b2e07baddf9715ae",
+        "android_client_info": {
+          "package_name": "com.aron.patientmonitoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228245992939-cu16e4cbgo24a19p0uncmvnt6qi8mcu9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aron.patientmonitoring",
+            "certificate_hash": "1f846ee3563058668a959f98129a82054f82eee3"
+          }
+        },
+        {
+          "client_id": "228245992939-6vulr46d2ipno07emn7lp9kh58re3s5m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdD6otqHTicG9N9WcFS0qay54IAjmub9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228245992939-6vulr46d2ipno07emn7lp9kh58re3s5m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
