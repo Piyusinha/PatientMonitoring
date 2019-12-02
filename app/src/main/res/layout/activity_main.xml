@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -8,14 +9,16 @@
     tools:context=".MainActivity"
     android:background="@drawable/back"
     android:orientation="vertical"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+   >
     <ImageView
-        android:id="@+id/action_bar_forward"
+        android:id="@+id/showmenu"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_gravity="end"
         android:src="@drawable/three"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="5dp"
+        android:onClick="showmenu"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -84,12 +87,20 @@
                     android:src="@drawable/ic_call_black_24dp"
                     android:background="@android:color/transparent"
                     ></ImageButton>
+
             </LinearLayout>
+
 
 
         </LinearLayout>
 
+        <Switch
+            android:id="@+id/notofication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
 
+            android:textColor="@color/white" />
     </LinearLayout>
 
 <LinearLayout
@@ -363,17 +374,19 @@
 
 
 </LinearLayout>
-<com.google.android.material.bottomnavigation.BottomNavigationView
-    android:layout_marginTop="30dp"
+<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:menu="@menu/bottom_navigation_bar"
-    app:itemIconTint="@color/white"
-    app:itemTextColor="@color/white"
-
-    >
-
-</com.google.android.material.bottomnavigation.BottomNavigationView>
+    android:layout_marginTop="10dp"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/medicinelay"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_healing_black_24dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="200dp"></ImageView>
+</LinearLayout>
 
 </LinearLayout>
 

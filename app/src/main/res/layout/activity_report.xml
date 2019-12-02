@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".report">
+    <ImageView
+        android:id="@+id/reportd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/report"></ImageView>
+    <androidx.cardview.widget.CardView
+    android:id="@+id/download"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    app:cardCornerRadius="60dp"
+    android:layout_marginTop="570dp"
+    android:layout_marginLeft="350dp"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_file_download_black_24dp"></ImageView>
+</androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/share"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="60dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginLeft="20dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_share_black_24dp"></ImageView>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

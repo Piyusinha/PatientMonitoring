@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="4sp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/grad_bg">
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boxuname"
+        android:textColor="@color/white"
+        android:id="@+id/add_alarm"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:text="Add Medicine Notification"
+        android:onClick="onAddAlarmClick" />
+
+    <ListView
+        style="@style/widget"
+        android:id="@+id/alarm_list" />
+
+</LinearLayout>

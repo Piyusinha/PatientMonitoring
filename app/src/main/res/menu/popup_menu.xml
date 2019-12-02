@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Report" android:id="@+id/report"/>
+    <item android:title="Nearby Hospitals" android:id="@+id/hospitals"/>
+    <item android:title="Order Medicines" android:id="@+id/medicine"/>
+    <item android:id="@+id/ambulance" android:title="Call Ambulance"/>
+    <item android:title="Logout" android:id="@+id/logout" />
+
+
+</menu>
